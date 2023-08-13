@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "CommonJS",
+    "target": "es6",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"]
+}

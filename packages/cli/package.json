@@ -1,0 +1,26 @@
+{
+  "name": "kunlun-cli",
+  "version": "1.0.0",
+  "description": "Main entry for kunlun cli",
+  "main": "./dist/index.js",
+  "bin": {
+    "arco": "bin/kunlun"
+  },
+  "scripts": {
+    "dev": "sh ../../.scripts/build.sh dev",
+    "build": "sh ../../.scripts/build.sh",
+    "build-type": "sh ../../.scripts/build-type.sh",
+    "clean": "rm -rf dist",
+    "clean-type": "find dist -name *.d.ts |xargs rm -rf",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "license": "MIT"
+}
