@@ -1,10 +1,10 @@
 {
-  "name": "kunlun-cli",
-  "version": "1.0.1",
+  "name": "kunlun-sj-cli",
+  "version": "1.0.2",
   "description": "Main entry for kunlun cli",
   "main": "./dist/index.js",
   "bin": {
-    "kunlun": "bin/kunlun"
+    "kunlun": "bin/kunlun.js"
   },
   "scripts": {
     "dev": "sh ../../.scripts/build.sh dev",

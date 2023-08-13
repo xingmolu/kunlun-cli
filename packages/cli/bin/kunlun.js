@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-// require('../dist/app');
 
 const { Command } = require('commander');
 const packageJson = require('../package.json');
@@ -9,7 +8,6 @@ const program = new Command();
 
 const { validate, getProjectPath, createAppWithTemplate } = require('../dist/app');
 
-console.log(print.default.info);
 
 const { TEMPLATE_LIST } = require('../dist/templateList');
 
