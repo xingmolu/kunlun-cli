@@ -14,7 +14,8 @@
     "format": "prettier --config --write \"packages/**/*.{js,jsx,ts,tsx}\"",
     "eslint": "eslint packages/ --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint 'packages/**/*.scss' --fix --cache",
-    "watch:build": "nodemon -e ts -x \"npm run build\""
+    "watch:build": "nodemon -e ts -x \"npm run build\"",
+    "publish": "npm run build & lerna publish"
   },
   "keywords": [],
   "author": "",
