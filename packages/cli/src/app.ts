@@ -18,6 +18,7 @@ interface IParams {
   version: string;
   description: string;
   repoURL: string;
+  useage: (appName: string) => string;
 }
 
 
@@ -36,6 +37,8 @@ async function createAppWithTemplate(params: IParams) {
     const zipName = fs.readdirSync(root).filter((name) => /\.zip$/.test(name))[0];
     // 删除下载的源文件
     fs.unlinkSync(path.join(root, zipName));
+    
+    print.info(`useage: ${params.useage?.(params.appName)}`)
   }).catch((err) => {
     print.error(err);
   });

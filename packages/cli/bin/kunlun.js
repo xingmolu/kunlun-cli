@@ -57,11 +57,12 @@ program
       default: 'A new project',
     }]).then( async (answers) => {
       
-      const repoURL = TEMPLATE_LIST.find(item => item.name === answers.templateName).repoURL;
+      const template = TEMPLATE_LIST.find(item => item.name === answers.templateName);
       
       await createAppWithTemplate({
         ...answers,
-        repoURL
+        repoURL: template.repoURL,
+        useage: template.useage,
       });
       // console.log(answers)
       // // getProjectPath()
