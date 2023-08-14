@@ -1,6 +1,6 @@
 {
   "name": "kunlun-sj-cli",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Main entry for kunlun cli",
   "main": "./dist/index.js",
   "bin": {
@@ -15,8 +15,15 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "typescript": "^5.1.6",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "compressing": "^1.9.1",
+    "download": "^8.0.0",
     "fs-extra": "^10.1.0",
-    "typescript": "^5.1.6"
+    "inquirer": "^8.2.0",
+    "lodash": "^4.17.21",
+    "ora": "^5.4.1"
   },
   "files": [
     "dist",

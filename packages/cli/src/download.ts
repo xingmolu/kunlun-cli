@@ -1,5 +1,5 @@
 import download from 'download';
-import * as compressing from 'compressing';
+// import * as compressing from 'compressing';
 // import print from './print';
 import withLoading from './loading';
 /**
